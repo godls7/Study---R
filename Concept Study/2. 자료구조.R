@@ -2,8 +2,6 @@ x <- '2022-01-01'
 obj <- as.Date(x) + 15
 
 
-
-
 # matrix
 mat1 <- matrix(c(1,2,3,4))
 mat2 <- matrix(c(1,2,3,4), nrow = 2) # 열 우선! 열 먼저 채움
@@ -25,7 +23,6 @@ seasons3 <- cbind(seasons2, c('초여름','초겨울','한겨울'))
 
 
 
-
 # list
 list1 <- list(name='Haein',
               address = 'Suwon',
@@ -38,14 +35,12 @@ list1[[1]] # 해당 값만 return (character, numeric ....)
 
 
 
-
 # frame
 no <- c(1,2,3,4)
 name <- c('Apple', 'Peach', 'Banana', 'Grape')
 price <- c(500,200,100,50)
 qty <- c(5,2,4,7)
 sales <- data.frame(NO=no,NAME=name,PRICE=price,QTY=qty)
-sales
 
 sales2 <- matrix(c(1,'Apple',500,5,
                   2,'Peach',200,2,
@@ -55,5 +50,3 @@ df1 <- data.frame(sales2)
 names(df1) <- c('NO','NAME','PRICE','QTY')
 
 sale <- matrix(c(1,'Apple',500,5),nrow=2, byrow=T)
-sale
-

@@ -23,11 +23,9 @@ df_cvs_exam <- read.csv("csv_exam.csv")
 
 View(df_cvs_exam)
 str(df_cvs_exam)
-
 summary(df_cvs_exam)
 
 # id, class 같은 경우는 숫자가 양적데이터 의미 X -> 질적데이터의 명목형데이터!! => R의 factor형으로 바꿔주기
 df_cvs_exam$class <- as.factor(df_cvs_exam$class)
 str(df_cvs_exam)
-
 table(df_cvs_exam)

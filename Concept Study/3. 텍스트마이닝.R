@@ -63,8 +63,8 @@ wordcloud(names(wordcount), # wordcount중 이름만
           random.order=F,
           random.color=T, # color 랜덤
           colors=palete)
+
 # legend : 범례 (투명레이어)
 legend(0.3,1 ,"서울시 응답소 요청사항 분석",
        cex=0.8,fill=NA,border=NA,bg="white" ,
        text.col="red",text.font=2,box.col="red")
-

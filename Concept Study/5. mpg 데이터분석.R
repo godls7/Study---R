@@ -42,4 +42,3 @@ qplot(df_mpg$test)
 df_mpg$grade <- ifelse(df_mpg$total>=30,"A", ifelse(df_mpg$total >= 20, "B","C"))
 table(df_mpg$grade)
 qplot(df_mpg$grade)
-

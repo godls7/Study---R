@@ -78,7 +78,6 @@ myfunc <- function(name, age=0, dept){
 
 myfunc(name='haein',dept='software')
 
-
 ?c
 vec1 <- c(1,2,3,4,5)
 length(vec1)
@@ -101,4 +100,3 @@ v2 <- c('봄','여름','늦여름','초가을')
 union(v1,v2)
 setdiff(v1,v2)
 intersect(v1,v2)
-
