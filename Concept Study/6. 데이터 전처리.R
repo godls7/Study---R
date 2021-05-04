@@ -179,3 +179,17 @@ group_a <- data.frame(id = c(1,2,3,4,5), test=c(60,80,70,90,85))
 group_b <- data.frame(id=c(6,7,8,9,10), test=c(70,83,65,95,80))
 
 group_all <- bind_rows(group_a,group_b)
+
+# practice p.156
+mpg4 <- as.data.frame(ggplot2::mpg)
+fuel <- data.frame(fl = c('c','d','e','p','r'),
+                   price_fl = c(2.35,2.38,2.11,2.76,2.22),
+                   stringsAsFactors = F)
+
+# 1
+mpg4 <- left_join(mpg4, fuel, by="fl")
+
+#2
+mpg4 %>% 
+  select(model, fl, price_fl) %>% 
+  head(5)
