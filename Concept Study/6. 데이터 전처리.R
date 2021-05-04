@@ -25,6 +25,7 @@ exam %>% filter(class==1|class==3|class==5)
 exam %>% filter(class %in% c(1,3,5))
 
 
+
 # 필요한 변수만 추출
 exam %>% select(math)
 
@@ -68,8 +69,10 @@ mean(df_suv$cty)
 mean(df_compact$cty)
 
 
+
 # 순서대로 정렬하기
 exam %>% arrange(class,math)
+
 
 
 # 파생변수 추가하기
@@ -104,6 +107,7 @@ mpg2 %>%
          mean=total/2) %>% 
   arrange(desc(mean)) %>% 
   head(3)
+
 
 
 # 집단별로 요약하기
