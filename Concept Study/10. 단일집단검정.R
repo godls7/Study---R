@@ -35,6 +35,9 @@ qqnorm(y1)
 qqline(y1, lty=1, col='blue')
 
 # t검증으로 가설 검증
-t.test(y1, mu=5.2, alter="two.sided", conf.level = 0.95) # 양측검정
+result <- t.test(y1, mu=5.2, alter="two.sided", conf.level = 0.95) # 양측검정
 t.test(y1, mu=5.2, alter="greater", conf.level = 0.95) # 양측검정
+
+# 귀무가설 임계값 계산
+qt(7.083e-05, 108)
 
